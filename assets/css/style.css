@@ -239,6 +239,19 @@ input {
 /* Swiper Class */
 
 /*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background: var(--first-color);
+  color: #fff;
+  padding: 1rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: var(--first-color-alt);
+}
 
 /*========== DISCOUNT SECTION ==========*/
 
@@ -277,8 +290,72 @@ input {
 /*=============== SCROLL BAR ===============*/
 
 /*=============== LOGIN ===============*/
+.login {
+  border: 1px solid blue;
+  position: fixed;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  width: 420px;
+  box-shadow: -2px 0 4px var(--shadow);
+  height: 100%;
+  top: 0;
+  right: -100%;
+  padding: 3.5rem 2rem;
+  transition: 0.4s;
+}
+
+.login__title-center {
+  font-size: var(--h2-font-size);
+  text-align: center;
+  margin-bottom: var(--mb-3);
+}
+
+.login-close {
+  font-size: 2rem;
+  color: var(--title-color);
+  top: 1.25rem;
+  right: 0.9rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.login__form {
+  border: 1px solid green;
+  row-gap: 1.5rem;
+}
+
+.login__content {
+  background-color: var(--container-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.login__label {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+
+.login__input {
+  width: 100%;
+  background-color: var(--container-color);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
+.signup {
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.signup a {
+  color: var(--first-color);
+}
 
 /* Show login */
+.show-login {
+  right: 0;
+}
 
 /*=============== CART ===============*/
 
@@ -293,6 +370,7 @@ input {
   top: 0;
   right: -100%;
   padding: 3.5rem 2rem;
+  transition: 0.4s;
 }
 
 .cart__title-center {
